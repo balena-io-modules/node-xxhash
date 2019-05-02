@@ -148,7 +148,7 @@ class Hash32 : public node::ObjectWrap {
     }
 
 
-    static void Initialize(Handle<Object> target) {
+    static void Initialize(Local<Object> target) {
       Local<String> name = Nan::New<String>("XXHash32").ToLocalChecked();
       Local<FunctionTemplate> tpl = Nan::New<FunctionTemplate>(New);
 

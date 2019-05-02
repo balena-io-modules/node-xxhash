@@ -4,7 +4,7 @@
 #include "hash_64.hpp"
 
 extern "C" {
-  void Init(v8::Handle<v8::Object> target) {
+  void Init(v8::Local<v8::Object> target) {
     Hash32::Initialize(target);
     Hash64::Initialize(target);
   }
